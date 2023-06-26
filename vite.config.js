@@ -12,5 +12,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  // Cambiar carpeta base: no vamos a ponerlo en root de webserver porque ya
+  // está la página autogenerada por PLCNext: vamos a ponerlo en /custweb
+  base: "/custweb"
 })
